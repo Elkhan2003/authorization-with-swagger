@@ -1,9 +1,10 @@
-import LayoutSite from './appPages/site/components/layout/LayoutSite.tsx';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes/router.tsx';
 
 const App = () => {
 	return (
 		<>
-			<LayoutSite />
+			<RouterProvider router={router} />
 		</>
 	);
 };
